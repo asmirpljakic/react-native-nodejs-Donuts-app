@@ -1,0 +1,6 @@
+# 1: 87. Deploying Server Method 1
+# 1: /node_modules
+/node_modules
+#N 1: /data/config.env  IDEMO u app.js
+/data/config.env
+

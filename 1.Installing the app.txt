@@ -1,0 +1,5 @@
+1. U Terminalu:'npm init' i samo za 'main': server.js
+2. U Terminalu: 'npm i express mongoose dotenv'
+3. Kreiramo 2 FAJLA:'app.js' i 'server.js'
+4. Idemo u 'package.json' i ISPOD '"main":"server.js"' DODAJEMO: "type": "module"
+5. IDEMO u app.js
