@@ -1735,15 +1735,93 @@
 //
 //
 
-// KREIRAMO NOVI FAJL:'.gitIgnore' U GLOBALU(server)
+// // KREIRAMO NOVI FAJL:'.gitIgnore' U GLOBALU(server)
 
-// IDEMO u '.gitIgnore'
+// // IDEMO u '.gitIgnore'
 
-// 2: KUCAMO U TERMINALU:'git init'
-// 2: KUCAMO U TERMINALU:'git add .'
-// 2: KUCAMO U TERMINALU:'git status'
-// 2: KREIRAMO NOVI FAJL:'Procfile' u GLOBALU(server) i u njega NE MOZEMO KOMENTAR pa cu napisati ovde sta sam napisao tamo: 'web: node server.js'
-// 2: KUCAMO U TERMINALU:'git add .'
+// // 2: KUCAMO U TERMINALU:'git init'
+// // 2: KUCAMO U TERMINALU:'git add .'
+// // 2: KUCAMO U TERMINALU:'git status'
+// // 2: KREIRAMO NOVI FAJL:'Procfile' u GLOBALU(server) i u njega NE MOZEMO KOMENTAR pa cu napisati ovde sta sam napisao tamo: 'web: node server.js'
+// // 2: KUCAMO U TERMINALU:'git add .'
+// // 2: KUCAMO U TERMINALU:'git commit -m "initial commit"'
+
+// // 2: IDEMO NA GITHUB LINK:'' da KREIRAMO REPOSITORY:
+// // 2: KUCAMO U TERMINALU:'git remote add origin https://github.com/asmirpljakic/react-native-nodejs-Donuts-app.git'
+// // 2:(KRAJ!) KUCAMO U TERMINALU:'git push -u origin master' i prikacili smo se preko: 'google browsvera'. POSLE IDEMO NA 'render.com' ZATO STO "Heroku" VISE NE RADI, NIJE DZABE xD
+
+// import express from 'express';
+// import { config } from 'dotenv';
+// import { errorMiddleware } from './middlewares/Error.js';
+// import cookieParser from 'cookie-parser';
+// import cors from 'cors';
+
+// config({
+//   path: './data/config.env',
+// });
+
+// export const app = express();
+
+// // Ussing Middlewares
+// app.use(express.json());
+// app.use(cookieParser());
+// app.use(
+//   cors({
+//     credentials: true,
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     origin: [process.env.FRONTEND_URI_1, process.env.FRONTEND_URI_2],
+//   })
+// );
+
+// app.get('/', (req, res, next) => {
+//   res.send('Working');
+// });
+
+// // Importing Routers here
+// import user from './routes/user.js';
+// import product from './routes/product.js';
+// import order from './routes/order.js';
+
+// app.use('/api/v1/user', user);
+// app.use('/api/v1/product', product);
+// app.use('/api/v1/order', order);
+
+// // Using Error Midleware
+// app.use(errorMiddleware);
+
+//
+//
+//
+//
+//
+//________ 88. Deploying Server Method 2 ________
+//
+//
+//
+//
+//
+//
+
+// IDEMO NA LINK: 'https://dashboard.render.com/' i kliknemo na "New +" pa na 'Web Service" pa se konektujemo na 'GitHub'
+
+// BRISEMO SAD FAJL:'Procfile'.
+
+// SAD IDEMO U package.json i BRISEMO:
+/*
+MENJAMO/BRISEMO: Set NODE_ENV=Production&&
+"scripts": {
+    "dev": "Set NODE_ENV=Development&& nodemon server.js",
+    "start": "Set NODE_ENV=Production&& node server.js"
+  },
+
+  i OVAKO OSTAJE:
+  "scripts": {
+    "dev": "Set NODE_ENV=Development&& nodemon server.js",
+    "start": "node server.js"
+  },
+*/
+
+// Kucamo u TERMINALU: ''
 
 import express from 'express';
 import { config } from 'dotenv';
