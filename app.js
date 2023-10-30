@@ -1821,7 +1821,19 @@ MENJAMO/BRISEMO: Set NODE_ENV=Production&&
   },
 */
 
-// Kucamo u TERMINALU: ''
+// Kucamo u TERMINALU: 'git add .'
+// Kucamo u TERMINALU: 'git commit -m 'heroku alternate''
+// Kucamo u TERMINALU: 'git push origin master'
+
+// POSLE IDEMO NA LINK:'https://dashboard.render.com/select-repo?installation_id=43476700&setup_action=install' i kliknemo na 'asmirpljakic / react-native-nodejs-Donuts-app' na 'Connect'
+
+// U polje 'Name' upisemo: 'ecommerce-server'
+// U polje 'Region' ODABEREMO: 'Frankfurt(EU Central)'
+// Kliknemo na 'Advanced' i posle kliknemo na 'Add Environment Variable'
+
+// UNESEMO SVE VARIJABLE IZ config.env SVE 'Key' i 'Value' za svaku.
+
+// I KAD TO URADIMO KLIKNEMO NA "Create Web Service".
 
 import express from 'express';
 import { config } from 'dotenv';
